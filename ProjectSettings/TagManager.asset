@@ -3,25 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - DialogPanel
-  - BackGround
-  - Object
-  - Charater
-  - UI
-  - NPC
-  - PC
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - background
+  - 
   - Water
   - UI
   - 
   - 
   - 
-  - Object
+  - 
   - 
   - 
   - 
@@ -47,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 3924501429
-    locked: 0
-  - name: middle
-    uniqueID: 2920554079
-    locked: 0
-  - name: top
-    uniqueID: 1623959415
     locked: 0
