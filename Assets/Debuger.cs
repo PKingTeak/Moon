@@ -10,6 +10,7 @@ public class Debuger : MonoBehaviour
     private DialogSystem dialogSystem01;
     [SerializeField]
     private TextMeshProUGUI textCountdown;
+   
 
     [SerializeField]
     private DialogSystem dialogSystem02;
@@ -42,6 +43,7 @@ public class Debuger : MonoBehaviour
     textCountdown.gameObject.SetActive(true);
     textCountdown.text = "The End";
 
+   
     yield return new WaitForSeconds(2);
     UnityEditor.EditorApplication.ExitPlaymode();
    }

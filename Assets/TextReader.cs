@@ -8,7 +8,6 @@ public class TextReader
 {
     public int branch;
     public string Name;
-
     public string Dialog;
     
 }

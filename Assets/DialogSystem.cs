@@ -5,6 +5,11 @@ using UnityEngine.UI;
 using TMPro;
 public class DialogSystem :MonoBehaviour
 {
+     [SerializeField]
+    private TextTestM textTestM;
+
+    [SerializeField]
+    private int branch; // 숫자가 같으면 같은 숫자만 출력 되게 하기위해 필요함
     [SerializeField]
     private Speaker[] speakers;
     [SerializeField]
@@ -17,6 +22,17 @@ public class DialogSystem :MonoBehaviour
 
      private void Awake() 
      {
+        int index = 0;
+        for(int i =0; i<textTestM.Sheet1.Count; i++)
+        {
+            if(textTestM.Sheet1[i].branch ==  branch) //엑셀에 브런치값과 현재 branch 값이 같으면 대사가 출력하게 할예정 (포인터)
+            {
+                dialogs[index].name = textTestM.Sheet1[i].Name;
+                dialogs[index].dialogue = textTestM.Sheet1[i].Dialog;
+                index++;
+            }
+
+        }
         Setup();
         
      }

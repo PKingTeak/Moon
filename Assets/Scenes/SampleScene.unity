@@ -217,12 +217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 82898860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25ccfb4b8121cbc4ebf858ab959b071c, type: 3}
+  m_Script: {fileID: 11500000, guid: ca3a8d07fe6370a4191a39b35298fadc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakers: []
-  dialogs: []
-  isAutoStart: 1
+  dialogSystem01: {fileID: 2011041652}
+  textCountdown: {fileID: 619349230}
+  dialogSystem02: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogSystem01: {fileID: 0}
-  textCountdown: {fileID: 0}
+  textCountdown: {fileID: 619349230}
   dialogSystem02: {fileID: 0}
 --- !u!114 &2011041652
 MonoBehaviour:
@@ -946,8 +946,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ccfb4b8121cbc4ebf858ab959b071c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakers: []
-  dialogs: []
+  textTestM: {fileID: 0}
+  branch: 1
+  speakers:
+  - imgaeDialog: {fileID: 0}
+    textName: {fileID: 981738073}
+    textDialogue: {fileID: 619349230}
+    objectArrow: {fileID: 0}
+  - imgaeDialog: {fileID: 0}
+    textName: {fileID: 981738073}
+    textDialogue: {fileID: 619349230}
+    objectArrow: {fileID: 0}
+  dialogs:
+  - SpeakerIndex: 0
+    name: "\uBC15\uACBD\uD0DD"
+    dialogue: "\uB3C4\uB300\uCCB4 \uC5B4\uC81C \uC624\uB0D0\uACE0 \uD30C\uC77C"
+  - SpeakerIndex: 0
+    name: "\uC8FC\uC778\uACF5"
+    dialogue: "\uADF8\uB7EC\uAC8C\uC694"
   isAutoStart: 1
 --- !u!4 &2011041653
 Transform:
